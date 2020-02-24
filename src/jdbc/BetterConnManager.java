@@ -31,7 +31,7 @@ public class BetterConnManager {
 		return connection;
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 		
 		try(Connection conn = BetterConnManager.getConnection()){
 			System.out.println("Connection openend");

@@ -21,9 +21,9 @@ private static Connection connection = null;
 			e.printStackTrace();
 		}
 		
-		String URL = props.getProperty("URL");
-		String USERNAME = props.getProperty("USERNAME");
-		String PASSWORD = props.getProperty("PASSWORD");
+		String URL = props.getProperty("url");
+		String USERNAME = props.getProperty("username");
+		String PASSWORD = props.getProperty("password");
 		connection = DriverManager.getConnection(URL,USERNAME,PASSWORD);
 		
 	}
