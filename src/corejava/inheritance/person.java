@@ -1,21 +1,37 @@
 package corejava.inheritance;
 
-public class person extends Actions implements TV {
+public class person implements TV {
 
-	int channel = 0;
-	static String person1 = "Alex";
-	public static void main(String[] args) {
+	public String name;
+	public char gender;
+	public int age;
 	
-		Actions.sleep(person1);
-		
-		
-
+	public person(String name, char gender, int age) {
+		this.name = name;
+		this.gender = gender;
+		this.age = gender;
 	}
 
 	@Override
 	public void switchChannel(int channel) {
 		channel ++;
-		System.out.println("channel " + channel + " channged" );
+		System.out.println(name + " switched the channel to "+ channel );
+		
 	}
+
+	@Override
+	public void turningTVOn() {
+		System.out.println(name + " turned the TV on");
+	}
+
+	@Override
+	public void turningTVOff() {
+		System.out.println(name + " turned the TV off");
+		
+	}
+
+
+	
+	
 
 }
